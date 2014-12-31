@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if IE 8]>      <html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>      <html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Pixma Responsive HTML5/CSS3 Template | FIFO THEMES</title>
+  <meta name="description" content="Pixma Responsive HTML5/CSS3 Template from FIFOTHEMES.COM">
+  <meta name="author" content="FIFOTHEMES.COM">
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <%= stylesheet_link_tag    'application', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' %>
+  <%= stylesheet_link_tag    'application', 'http://fonts.googleapis.com/css?family=Oswald:400,300,700' %>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- Favicons -->
+  <%= favicon_link_tag 'img/ico/favicon.ico', rel: "shortcut icon" %>
+  <%= favicon_link_tag 'img/ico/apple-touch-icon.png', rel: 'apple-touch-icon' %>
+  <%= favicon_link_tag 'img/ico/apple-touch-icon-72.png', rel: 'apple-touch-icon', sizes: '72x72' %>
+  <%= favicon_link_tag 'img/ico/apple-touch-icon-114.png', rel: 'apple-touch-icon', sizes: "114x114" %>
+  <%= favicon_link_tag 'img/ico/apple-touch-icon-144.png', rel: 'apple-touch-icon', sizes: "144x144" %>
+  <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+      <!--[if IE]>
+      <link rel="stylesheet" href="css/ie.css">
+      <![endif]-->
+<body class="home" data-spy="scroll" data-offset="250" data-target="#myScrollSpy">
+
+<%= yield %>
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+</body>
+</html>
