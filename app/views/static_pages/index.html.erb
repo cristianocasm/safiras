@@ -176,10 +176,10 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            <h4 class="modal-title" id="myModalLabel">CADASTRE-SE GRÁTIS</h4>
           </div>
           <div class="modal-body">
-            ...
+            <%= render "subscribe_form"  %>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -196,40 +196,69 @@
                <!-- THE FIRST SLIDE -->
                <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on">
                    <%= image_tag "img/slider/slider-bg-1.jpg", alt: "Pixma", 'data-lazyload' => "assets/img/slider/slider-bg-1.jpg", 'data-bgposition' => "center top", 'data-bgfit' => "cover", 'data-bgrepeat' => "no-repeat" %>
-
-                   <div class="caption large_text sft"
-                    data-x="40"
-                    data-y="70"
-                    data-speed="300"
-                    data-start="800"
-                    data-easing="easeOutExpo"  >Mais Clientes</div>
-                   <div class="caption large_text sft"
-                    data-x="40"
-                    data-y="120"
-                    data-speed="300"
-                    data-start="1600"
-                    data-easing="easeOutExpo"  >Mais Reconhecimento</div>
-                   <div class="caption large_text sfr"
-                    data-x="40"
-                    data-y="170"
-                    data-speed="300"
-                    data-start="2400"
-                    data-easing="easeOutExpo"  ><span class="dblue">Mais RENDIMENTOS</span></div>
-                   <div class="caption smal_text sfr"
-                    data-x="40"
-                    data-y="230"
-                    data-speed="300"
-                    data-start="2400"
-                    data-easing="easeOutExpo"  >
-                    <h5 class="dblue">
-                    Estimule a divulgação boca-a-boca em seu salão de beleza, <br />
-                    conquiste novos clientes, fidelize-os e alavanque seus <br />
-                    rendimentos em, no máximo, 2 meses. Duvida? Faça seu <br />
-                    cadastro ao lado e ganhe 2 meses grátis! </h5>
+                   <div class="caption large_text lfl stl start"
+                    data-x="0"
+                    data-y="40"
+                    data-speed="1000"
+                    data-start="1500"
+                    data-easing="easeOutExpo" > QUER TORNAR SEU </div>
+                   <div class="caption very_large_text sfl"
+                    data-x="0"
+                    data-y="80"
+                    data-speed="1000"
+                    data-start="1500"
+                    data-easing="easeOutExpo" > SALÃO DE BELEZA </div>
+                    <div class="caption large_text sfr"
+                    data-x="0"
+                    data-y="145"
+                    data-speed="1000"
+                    data-start="1500"
+                    data-easing="easeOutExpo" > <span class="dblue"> MAIS RENTÁVEL?</span> </div>
+                   <div class="caption list_slide sfb"
+                    data-x="70"
+                    data-y="220"
+                    data-speed="1050"
+                    data-start="2200"
+                    data-easing="easeOutExpo"  > <h5 class="dblue"> Então veja o que trouxemos para você: </h5> </div>
+                   <div class="caption list_slide lfb tp-caption start"
+                        data-easing="easeOutExpo"
+                        data-start="2200"
+                        data-speed="1200"
+                        data-y="260"
+                        data-x="70">
+                       <div class="list-slide">
+                           <i class="fa fa-comments-o slide-icon"></i>
+                           <h5 class="dblue"> Divulgação Boca-a-Boca </h5>
+                       </div>
                    </div>
-                    <div class="caption smal_text sfr"
+                   <div class="caption list_slide lfb tp-caption start"
+                        data-easing="easeOutExpo"
+                        data-start="2200"
+                        data-speed="1350"
+                        data-y="300"
+                        data-x="70">
+                       <div class="list-slide">
+                           <i class="fa fa-group slide-icon"></i>
+                           <h5 class="dblue"> Fidelização de Clientes </h5>
+                       </div>
+                   </div>
+                   <div class="caption list_slide lfb tp-caption start"
+                        data-easing="easeOutExpo"
+                        data-start="2200"
+                        data-speed="1500"
+                        data-y="340"
+                        data-x="70">
+                       <div class="list-slide">
+                           <i class="fa fa-calendar slide-icon"></i>
+                           <h5 class="dblue"> Agenda On-line </h5>
+                       </div>
+                   </div>
+
+                    <div class="caption smal_text sft"
                     data-x="560"
-                    data-y="40"  >
+                    data-y="40"
+                    data-speed="600"
+                    data-start="800"  >
                     <iframe src="//player.vimeo.com/video/93972085?byline=0&amp;portrait=0&amp;autoplay=0" width="580" height="328" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   </div>
 
@@ -378,13 +407,15 @@
          <div class="container">
             <div class="row">
                <div class="slogan-content">
-                  <div class="col-lg-12 col-md-12">
-                     <h2 class="slogan-title">Já imaginou se seu salão fosse mais lucrativo? Nós imaginamos e criamos o SAFIRAS pra você!</h2>
+                  <div class="col-lg-9 col-md-9">
+                     <h2 class="slogan-title">Você tem coragem para ter o salão mais conhecido da cidade?</h2>
                   </div>
                   <div class="col-lg-3 col-md-3" id="PorQueUsar">
-                     <!-- <div class="get-started">
-                        <%= image_tag "arrow_up.png", alt: "Cadastre-se agora" %>
-                     </div> -->
+                     <div class="get-started">
+                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        Teste Grátis por 2 Meses
+                      </button>
+                     </div>
                   </div>
                   <div class="clearfix"></div>
                </div>
@@ -463,21 +494,18 @@
          <div class="container">
             <div class="row">
                <div class="col-md-4 col-sm-12 col-xs-12 text-center animate_afl d1">
-                  <%= image_tag "img/iphone5c.png", alt: "iPhone5c" %>
+                  <%= image_tag "telas.png", alt: "iPhone5c" %>
                </div>
                <div class="col-md-8 col-sm-12 col-xs-12 animate_afr d3">
                   <div class="app-service">
-                     <h3>Pixma App Services</h3>
-                     <h4>We provide all kinds of iPhone application design and development services.</h4>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.Vivamus diam diam, fermentum sed dapibus eget, egestas sed eros. Lorem fermentum ipsum dolor sit amet.Lorem fermentum diam diam.  
+                     <h3>Acessível em Todos os Dispositivos</h3>
+                     <p>
+                      Smartphones, tablets, computadores ou notebooks. Com o Safiras você poderá acessar sua agenda de qualquer dispositivo e seus clientes poderão enviar as fotos do seu trabalho de qualquer aparelho.
                      </p>
                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      Praticidade, comodidade, segurança e resultados garantidos. 
                      </p>
                      <div class="divider"></div>
-                     <div class="learnmore">
-                        <a class="btn-special btn-grey" href="#">Learn More</a>
-                     </div>
                   </div>
                </div>
             </div>

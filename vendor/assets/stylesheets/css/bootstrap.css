@@ -5501,7 +5501,13 @@ button.close {
   overflow-y: auto;
 }
 .modal-dialog {
-  position: relative;
+  /*position: relative;*/
+  position: fixed;
+  top: 40;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
   width: auto;
   margin: 10px;
 }
