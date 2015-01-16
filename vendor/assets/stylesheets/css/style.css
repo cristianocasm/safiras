@@ -2270,9 +2270,7 @@ a.portfolio-item-link {
     text-align: center;
     padding: 10px 5px 10px 5px;
     background: #FFF;
-}
 
-.portfolio-item-title a {
     font-weight: 600;
     font-size: 14px;
     font-family: "Open Sans", Arial, Verdana;
@@ -2283,6 +2281,18 @@ a.portfolio-item-link {
     -ms-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
 }
+
+/*.portfolio-item-title a {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Open Sans", Arial, Verdana;
+    color: #666;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}*/
 
 .portfolio-item-title a:hover {
     text-decoration: none;
