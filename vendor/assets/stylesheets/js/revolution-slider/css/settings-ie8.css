@@ -317,6 +317,25 @@ website:   	http://www.themepunch.com
 			background-color:#4e5b6c;	
 			letter-spacing: 0;										
 		}
+span.tp-caption.modern_big_bluebg{
+			position: relative;
+			color: #fff;
+			text-shadow: none;
+			font-weight: 800;
+			font-size: 30px;
+			line-height: 36px;
+			font-family: 'Open Sans', sans-serif;
+			padding: 3px 10px;
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			background-color:#4e5b6c;
+			letter-spacing: 0;
+		}
+h4.subtitle {
+	padding: 15px;
+		padding-top: 0px
+}
 .tp-caption.modern_big_redbg{
 			position: absolute; 
 			color: #fff; 

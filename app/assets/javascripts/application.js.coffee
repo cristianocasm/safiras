@@ -42,4 +42,4 @@ jQuery ->
   $('.main-header li a').click ->
     event.preventDefault();
     $($(this).attr('href'))[0].scrollIntoView();
-    scrollBy(0, -200);
+    scrollBy(0, -170);
