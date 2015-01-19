@@ -45,7 +45,7 @@
 	background: linear-gradient(#9a7041,#c69c6d);
 	border: 1px solid #867058;
 
-	-webkit-box-shadow: inset 0 1px 1px 0 #beab95, 0 2px 0 -1px rgba(0,0,0,0.2);
+	box-shadow: inset 0 1px 1px 0 #beab95, 0 2px 0 -1px rgba(0,0,0,0.2);
 	box-shadow: inset 0 1px 1px 0 #beab95, 0 2px 0 -1px rgba(0,0,0,0.2);
 	cursor: pointer;
 }

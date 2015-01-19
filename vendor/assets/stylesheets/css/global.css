@@ -24,7 +24,7 @@
   width: 1em;
   height: 1em;
   border-radius: .5em;
-  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-animation: spin 1s linear infinite;
