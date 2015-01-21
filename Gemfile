@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 gem 'newrelic_rpm'
 
 gem 'byebug'
+
+gem 'split', require: 'split/dashboard'

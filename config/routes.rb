@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  root 'static_pages#index'
-  get 'index2' => 'static_pages#index2'
+  root 'customers#new'
+  post 'customers' => 'customers#create'
+
+
+  mount Split::Dashboard, at: 'testes_ab'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

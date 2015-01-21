@@ -43,3 +43,12 @@ jQuery ->
     event.preventDefault();
     $($(this).attr('href'))[0].scrollIntoView();
     scrollBy(0, -170);
+
+  $('#contact').submit ->
+    alert("Aqui")
+    $('#contact').submit()
+      #$.post('http://path/to/post', 
+      #   $('#myForm').serialize(), 
+      #   function(data, status, xhr){
+      #     // do something here with response;
+      #   });
