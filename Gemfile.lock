@@ -56,6 +56,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.5.0)
     multi_json (1.10.1)
+    mysql2 (0.3.17)
     newrelic_rpm (3.9.0.229)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -136,6 +137,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
+  mysql2
   newrelic_rpm
   rails (= 4.1.4)
   sass-rails (~> 4.0.3)

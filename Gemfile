@@ -43,3 +43,5 @@ gem 'newrelic_rpm'
 gem 'byebug'
 
 gem 'split', require: 'split/dashboard'
+
+gem 'mysql2'
