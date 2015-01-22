@@ -45,3 +45,5 @@ gem 'byebug'
 gem 'split', require: 'split/dashboard'
 
 gem 'mysql2'
+
+gem 'csso-rails'
