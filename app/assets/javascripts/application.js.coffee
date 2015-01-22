@@ -45,7 +45,7 @@ jQuery ->
     scrollBy(0, -170);
 
   $('#contact').submit ->
-    alert("Aqui")
+    #alert("Aqui")
     $('#contact').submit()
       #$.post('http://path/to/post', 
       #   $('#myForm').serialize(), 
