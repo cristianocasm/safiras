@@ -3,285 +3,253 @@
     <div class="spinner"></div>
     Loading...
   </div>
-
 </div>
 <div class="wrap">
-   <!-- Header Start -->
-   <header id="header">
-      <!-- Main Header Start -->
-      <div class="main-header">
-         <div class="container" id="myScrollSpy">
-            <!-- Logo Start -->
-            <div class="logo pull-left">
-               <h1>
-                  <a href="index.html">
-                  <%= image_tag 'img/logo.png', alt: 'pixma', width: '125', height: '60' %>
-                  </a>
-               </h1>
-            </div>
-            <!-- Logo End -->
-            <!-- Mobile Menu Start -->
-<!--             <div class="mobile navbar-header">
-               <a class="navbar-toggle" data-toggle="collapse" href=".navbar-collapse">
-               <i class="fa fa-bars fa-2x"></i>
-               </a> 
-            </div> -->
-            <!-- Mobile Menu End -->
-            <!-- Menu Start -->
-            <nav class="collapse navbar-collapse menu">
-               <ul class="nav nav-tabs navbar-nav sf-menu" role="tablist">
-                  <li>
-                     <a href="#OQueE"> O que é? </a>
-                  </li>
-                  <li>
-                     <a href="#PorQueUsar"> Por que usar? </a>
-                  </li>
-                  <li>
-                     <a href="#ServePraMim" class="sf-with-ul"> Serve pra Mim? </a>
-                  </li>
-                  <li>
-                     <a href="#CadastreSe" class="sf-with-ul"> Cadastre-se </a>
-                  </li>
-               </ul>
-            </nav>
-            <!-- Menu End --> 
-         </div>
-      </div>
-      <!-- Main Header End -->
-   </header>
-   <!-- Header End --> 
-   <!-- Content Start -->
-   <div id="main">
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">CADASTRE-SE GRÁTIS</h4>
-          </div>
-          <div class="modal-body">
-            <%= render "subscribe_form"  %>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-          </div>
+ <header id="header">
+  <div class="main-header">
+   <div class="container" id="myScrollSpy">
+    <div class="logo pull-left">
+     <h1>
+      <a href="index.html">
+        <%= image_tag 'img/logo.png', alt: 'pixma', width: '125', height: '60' %>
+      </a>
+    </h1>
+  </div>
+  <nav class="collapse navbar-collapse menu">
+   <ul class="nav nav-tabs navbar-nav sf-menu" role="tablist">
+    <li>
+     <a href="#OQueE"> O que é? </a>
+   </li>
+   <li>
+     <a href="#PorQueUsar"> Por que usar? </a>
+   </li>
+   <li>
+     <a href="#ServePraMim" class="sf-with-ul"> Serve pra Mim? </a>
+   </li>
+   <li>
+     <a href="#CadastreSe" class="sf-with-ul"> Cadastre-se </a>
+   </li>
+ </ul>
+</nav>
+</div>
+</div>
+</header>
+<div id="main">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">CADASTRE-SE GRÁTIS</h4>
+        </div>
+        <div class="modal-body">
+          <%= render "subscribe_form"  %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
         </div>
       </div>
     </div>
+  </div>
 
-   <!-- Slider Start-->
-   <div class="fullwidthbanner-container" id="OQueE">
-       <div class="fullwidthbanner rslider">
-           <ul>
-               <!-- THE FIRST SLIDE -->
-               <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on">
-                   <%= image_tag "img/slider/slider-bg-11.svg", alt: "Pixma", 'data-lazyload' => image_path("img/slider/slider-bg-11.svg"), 'data-bgposition' => "center top", 'data-bgfit' => "cover", 'data-bgrepeat' => "no-repeat" %>
-                   <div class="caption large_text lfl stl start"
-                    data-x="0"
-                    data-y="40"
-                    data-speed="1000"
-                    data-start="1500"
-                    data-easing="easeOutExpo" > QUER TORNAR SEU </div>
-                   <div class="caption very_large_text sfl"
-                    data-x="0"
-                    data-y="80"
-                    data-speed="1000"
-                    data-start="1500"
-                    data-easing="easeOutExpo" > SALÃO DE BELEZA </div>
-                    <div class="caption large_text sfr"
-                    data-x="0"
-                    data-y="145"
-                    data-speed="1000"
-                    data-start="1500"
-                    data-easing="easeOutExpo" > <span class="dblue"> MAIS RENTÁVEL?</span> </div>
-                   <div class="caption list_slide sfb"
-                    data-x="70"
-                    data-y="210"
-                    data-speed="1050"
-                    data-start="2200"
-                    data-easing="easeOutExpo"  > <h5 class="dblue"> Então veja o que trouxemos para você: </h5> </div>
-                   <div class="caption list_slide lfb tp-caption start"
-                        data-easing="easeOutExpo"
-                        data-start="2200"
-                        data-speed="1200"
-                        data-y="260"
-                        data-x="0">
-                       <div class="list-slide">
-                           <i class="fa fa-comments-o slide-icon"></i>
-                           <h5 class="dblue"> Divulgação Boca-a-Boca nas Redes Sociais </h5>
-                       </div>
-                   </div>
-                   <div class="caption list_slide lfb tp-caption start"
-                        data-easing="easeOutExpo"
-                        data-start="2200"
-                        data-speed="1350"
-                        data-y="300"
-                        data-x="0">
-                       <div class="list-slide">
-                           <i class="fa fa-group slide-icon"></i>
-                           <h5 class="dblue"> Fidelização Automática de Clientes </h5>
-                       </div>
-                   </div>
-                   <div class="caption list_slide lfb tp-caption start"
-                        data-easing="easeOutExpo"
-                        data-start="2200"
-                        data-speed="1500"
-                        data-y="340"
-                        data-x="0">
-                       <div class="list-slide">
-                           <i class="fa fa-calendar slide-icon"></i>
-                           <h5 class="dblue"> Agenda On-line para Marcação de Horários</h5>
-                       </div>
-                   </div>
-
-                    <div class="caption smal_text sft"
-                    data-x="590"
-                    data-y="40"
-                    data-speed="600"
-                    data-start="800"  >
-                    <!-- <iframe src="//player.vimeo.com/video/93972085?byline=0&amp;portrait=0&amp;autoplay=0" width="580" height="328" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-                  </div>
-               </li>
-           </ul>
+  <div class="fullwidthbanner-container" id="OQueE">
+   <div class="fullwidthbanner rslider">
+     <ul>
+       <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on">
+         <%= image_tag "img/slider/slider-bg-11.svg", alt: "Pixma", 'data-lazyload' => image_path("img/slider/slider-bg-11.svg"), 'data-bgposition' => "center top", 'data-bgfit' => "cover", 'data-bgrepeat' => "no-repeat" %>
+         <div class="caption large_text lfl"
+         data-x="0"
+         data-y="40"
+         data-speed="1000"
+         data-start="1500"
+         data-easing="easeOutExpo" > QUER TORNAR SEU </div>
+         <div class="caption very_large_text sfl"
+         data-x="0"
+         data-y="80"
+         data-speed="1000"
+         data-start="1500"
+         data-easing="easeOutExpo" > SALÃO DE BELEZA </div>
+         <div class="caption large_text sfr"
+         data-x="0"
+         data-y="145"
+         data-speed="1000"
+         data-start="1500"
+         data-easing="easeOutExpo" > <span class="dblue"> MAIS RENTÁVEL?</span> </div>
+         <div class="caption list_slide sfb"
+         data-x="70"
+         data-y="210"
+         data-speed="1050"
+         data-start="2200"
+         data-easing="easeOutExpo"  > <h5 class="dblue"> Então veja o que trouxemos para você: </h5> </div>
+         <div class="caption list_slide lfb"
+         data-easing="easeOutExpo"
+         data-start="2200"
+         data-speed="1200"
+         data-y="260"
+         data-x="0">
+         <div class="list-slide">
+           <i class="fa fa-comments-o slide-icon"></i>
+           <h5 class="dblue"> Divulgação Boca-a-Boca nas Redes Sociais </h5>
+         </div>
        </div>
+       <div class="caption list_slide lfb"
+       data-easing="easeOutExpo"
+       data-start="2200"
+       data-speed="1350"
+       data-y="300"
+       data-x="0">
+       <div class="list-slide">
+         <i class="fa fa-group slide-icon"></i>
+         <h5 class="dblue"> Fidelização Automática de Clientes </h5>
+       </div>
+     </div>
+     <div class="caption list_slide lfb"
+     data-easing="easeOutExpo"
+     data-start="2200"
+     data-speed="1500"
+     data-y="340"
+     data-x="0">
+     <div class="list-slide">
+       <i class="fa fa-calendar slide-icon"></i>
+       <h5 class="dblue"> Agenda On-line para Marcação de Horários</h5>
+     </div>
    </div>
-   <!-- Slider End-->
-   <!-- Slogan Start-->
-      <!-- Slogan Start-->
-      <div class="slogan bottom-pad-small">
-         <div class="container">
-            <div class="row">
-               <div class="slogan-content">
-                  <div class="col-lg-9 col-md-9">
-                     <h2 class="slogan-title">Você tem coragem para ter o salão mais conhecido e rentável da cidade?</h2>
-                  </div>
-                  <div class="col-lg-3 col-md-3">
-                     <div class="get-started">
-                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                        Teste Grátis por 2 Meses
-                      </button>
-                     </div>
-                  </div>
-                  <div class="clearfix"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Slogan End--> 
-      <!-- Main Content start-->
-      <div class="main-content" id="PorQueUsar">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-4 col-md-4 col-sm-4">
-                  <div class="content-box big ch-item bottom-pad-small">
-                     <div class="ch-info-wrap">
-                        <div class="ch-info">
-                           <div class="ch-info-front ch-img-1"><i class="fa fa-comments-o"></i></div>
-                           <div class="ch-info-back">
-                              <i class="fa fa-comments-o"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="content-box-info">
-                        <h3>Boca-a-Boca</h3>
-                        <p>
-                           Com o SafiraSalões seus clientes divulgam seu estabelecimento nas redes sociais e atraem novos clientes!!!
-                        </p>
-                        <!-- <a href="#">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a> -->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-4">
-                  <div class="content-box big ch-item bottom-pad-small">
-                     <div class="ch-info-wrap">
-                        <div class="ch-info">
-                           <div class="ch-info-front ch-img-1"><i class="fa fa-group"></i></div>
-                           <div class="ch-info-back">
-                              <i class="fa fa-group"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="content-box-info">
-                        <h3>Fidelização</h3>
-                        <p>
-                           Recompense automaticamente os clientes que divulgarem seu estabelecimento e os faça voltar sempre!!!
-                        </p>
-                        <!-- <a href="#">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a> -->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-4">
-                  <div class="content-box big ch-item bottom-pad-small">
-                     <div class="ch-info-wrap">
-                        <div class="ch-info">
-                           <div class="ch-info-front ch-img-1"><i class="fa fa-trophy"></i></div>
-                           <div class="ch-info-back">
-                              <i class="fa fa-trophy"></i>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="content-box-info">
-                        <h3>Sucesso Garantido</h3>
-                        <p>
-                           Conquiste novos clientes, lote sua agenda e aumente suas receitas. O sucesso é garantido!!!
-                        </p>
-                        <!-- <a href="#">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a> -->
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Main Content end-->
 
-      <!-- Recent works start-->
-      <div class="recentworks bottom-pad">
-         <div class="container">
-            <div class="row caption" style="text-align: center;" id="ServePraMim">
-               <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <span class="modern_big_bluebg tp-caption">Salões de Beleza</span>
-                <span class="modern_big_bluebg tp-caption">Centros de Estética</span>
-                <span class="modern_big_bluebg tp-caption">Spas</span>
-                <span class="modern_big_bluebg tp-caption">Profissionais Autônomos</span>
-               </h2>
-               <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 subtitle">
-                Veja alguns dos profissionais que já utilizam o SafiraSalões:
-               </h4>
-            </div>
-            <div class="row">
-               <div class="col-lg-12 col-md-12 col-xs-12">
-                  <div class="row portfolio-pad">
-                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="portfolio-item">
-                              <%# image_tag "cabeleireiros1.svg", alt: "Cabeleireiros(as)", width: '350', height: '233' %>
-                              <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="350"
-   height="233"
-   id="svg3237">
-  <metadata
-     id="metadata3243">
-    <rdf:RDF>
+   <div class="caption sft"
+   data-x="590"
+   data-y="40"
+   data-speed="600"
+   data-start="800"  >
+   <!-- <iframe src="//player.vimeo.com/video/93972085?byline=0&amp;portrait=0&amp;autoplay=0" width="580" height="328" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+ </div>
+</li>
+</ul>
+</div>
+</div>
+<div class="slogan bottom-pad-small">
+ <div class="container">
+  <div class="row">
+   <div class="slogan-content">
+    <div class="col-lg-9 col-md-9">
+     <h2 class="slogan-title">Você tem coragem para ter o salão mais conhecido e rentável da cidade?</h2>
+   </div>
+   <div class="col-lg-3 col-md-3">
+     <div class="get-started">
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Teste Grátis por 2 Meses
+      </button>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-content" id="PorQueUsar">
+ <div class="container">
+  <div class="row">
+   <div class="col-lg-4 col-md-4 col-sm-4">
+    <div class="content-box big ch-item bottom-pad-small">
+     <div class="ch-info-wrap">
+      <div class="ch-info">
+       <div class="ch-info-front ch-img-1"><i class="fa fa-comments-o"></i></div>
+       <div class="ch-info-back">
+        <i class="fa fa-comments-o"></i>
+      </div>
+    </div>
+  </div>
+  <div class="content-box-info">
+    <h3>Boca-a-Boca</h3>
+    <p>
+     Com o SafiraSalões seus clientes divulgam seu estabelecimento nas redes sociais e atraem novos clientes!!!
+   </p>
+ </div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+  <div class="content-box big ch-item bottom-pad-small">
+   <div class="ch-info-wrap">
+    <div class="ch-info">
+     <div class="ch-info-front ch-img-1"><i class="fa fa-group"></i></div>
+     <div class="ch-info-back">
+      <i class="fa fa-group"></i>
+    </div>
+  </div>
+</div>
+<div class="content-box-info">
+  <h3>Fidelização</h3>
+  <p>
+   Recompense automaticamente os clientes que divulgarem seu estabelecimento e os faça voltar sempre!!!
+ </p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+  <div class="content-box big ch-item bottom-pad-small">
+   <div class="ch-info-wrap">
+    <div class="ch-info">
+     <div class="ch-info-front ch-img-1"><i class="fa fa-trophy"></i></div>
+     <div class="ch-info-back">
+      <i class="fa fa-trophy"></i>
+    </div>
+  </div>
+</div>
+<div class="content-box-info">
+  <h3>Sucesso Garantido</h3>
+  <p>
+   Conquiste novos clientes, lote sua agenda e aumente suas receitas. O sucesso é garantido!!!
+ </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="recentworks bottom-pad">
+ <div class="container">
+  <div class="row caption" style="text-align: center;" id="ServePraMim">
+   <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <span class="modern_big_bluebg tp-caption">Salões de Beleza</span>
+    <span class="modern_big_bluebg tp-caption">Centros de Estética</span>
+    <span class="modern_big_bluebg tp-caption">Spas</span>
+    <span class="modern_big_bluebg tp-caption">Profissionais Autônomos</span>
+  </h2>
+  <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 subtitle">
+    Veja alguns dos profissionais que já utilizam o SafiraSalões:
+  </h4>
+</div>
+<div class="row">
+ <div class="col-lg-12 col-md-12 col-xs-12">
+  <div class="row portfolio-pad">
+   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="portfolio-item">
+      <svg
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:cc="http://creativecommons.org/ns#"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      version="1.1"
+      width="350"
+      height="233"
+      id="svg3237">
+      <metadata
+      id="metadata3243">
+      <rdf:RDF>
       <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs3241" />
-  <image
-     xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+      rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type
+      rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      <dc:title></dc:title>
+    </cc:Work>
+  </rdf:RDF>
+</metadata>
+<defs
+id="defs3241" />
+<image
+xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADpAV4DASIA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
@@ -554,48 +522,47 @@ OvCble8twisQOvt3p+n6hq+ihXsL6aHpmMN8p/A8VoXv+qT/AHx/MVFc/dT61yxm1sdsoRluddo3
 xRkV0i1m1ynQzwjBH1X/AAr0Wx1G11K1W5s50mhboyn/ADivn2T/AJafU12vws/4/wC6rso1ZS0Z
 xYihGCuj1ilzTD0pR0rrOI//2Q==
 "
-     x="0"
-     y="0"
-     width="350"
-     height="233"
-     id="image3245" />
+x="0"
+y="0"
+width="350"
+height="233"
+id="image3245" />
 </svg>
-                           <div class="portfolio-item-title">
-                              Cabeleireiros(as)
-                           </div>
-                           <div class="clearfix"></div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                         <div class="portfolio-item">
-                            <%# image_tag "manicure-pedicure.svg", alt: "Manicures / Pedicures", width: '350', height: '233' %>
-                            <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="350"
-   height="233"
-   id="svg3637">
+<div class="portfolio-item-title">
+  Cabeleireiros(as)
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+ <div class="portfolio-item">
+  <svg
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.1"
+  width="350"
+  height="233"
+  id="svg3637">
   <metadata
-     id="metadata3643">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs3641" />
-  <image
-     xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+  id="metadata3643">
+  <rdf:RDF>
+  <cc:Work
+  rdf:about="">
+  <dc:format>image/svg+xml</dc:format>
+  <dc:type
+  rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  <dc:title></dc:title>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs
+id="defs3641" />
+<image
+xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADpAV4DASIA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
@@ -857,48 +824,47 @@ yV9jVRdtyiDnov5kD+dKzIMkkfWoT1T6mopP9T+JrTcVrF6OVEUBgCf9k/zqMkAg5HPqKhtepq03
 Ral6Mpaoki3YPy/kKcwkz8vA91qk/Q1Yg6fjWbb3LURwMgbDOgHqD/8AXqGed2QrDIxIPPSluvuf
 nUUH+tX6VUdria1sSyR7oBiRw564JBqeG0iVPmZnPqSTUc3+FbVl/wAef/AqzlNqI7JM/9k=
 "
-     x="0"
-     y="0"
-     width="350"
-     height="233"
-     id="image3645" />
+x="0"
+y="0"
+width="350"
+height="233"
+id="image3645" />
 </svg>
-                            <div class="portfolio-item-title">
-                               Manicures / Pedicures
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                         <div class="portfolio-item">
-                            <%# image_tag "esteticista.svg", alt: "Esteticistas", width: '350', height: '233' %>
-                            <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="350"
-   height="233"
-   id="svg3557">
+<div class="portfolio-item-title">
+ Manicures / Pedicures
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+ <div class="portfolio-item">
+  <svg
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.1"
+  width="350"
+  height="233"
+  id="svg3557">
   <metadata
-     id="metadata3563">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs3561" />
-  <image
-     xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+  id="metadata3563">
+  <rdf:RDF>
+  <cc:Work
+  rdf:about="">
+  <dc:format>image/svg+xml</dc:format>
+  <dc:type
+  rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  <dc:title></dc:title>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs
+id="defs3561" />
+<image
+xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADpAV4DASIA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
@@ -1107,50 +1073,49 @@ n5FMFFMgfmlzUdKKAEdqqOcvVh+hqr/FSY0Sp1rSslw1ZsdallQhSLhOBiomqRqiNMgjciq5OTU0
 lQnrQyhaikOSBUg6VFJ96kCAZFG7PWgfdpooGSBfSrMS5xUEfarUXUU0Sywq4GTSE5FD9KYelMQ4
 HFNLUdqaaAGs2KiLU9+tRUAf/9k=
 "
-     x="0"
-     y="0"
-     width="350"
-     height="233"
-     id="image3565" />
+x="0"
+y="0"
+width="350"
+height="233"
+id="image3565" />
 </svg>
-                            <div class="portfolio-item-title">
-                               Esteticistas
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                         <div class="portfolio-item">
-                            <%# image_tag "maquiador.svg", alt: "Maquiadores", width: '350', height: '233' %>
-                            <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="350"
-   height="233"
-   id="svg3717">
-  <metadata
-     id="metadata3723">
+<div class="portfolio-item-title">
+ Esteticistas
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="row">
+ <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+   <div class="portfolio-item">
+    <svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    width="350"
+    height="233"
+    id="svg3717">
+    <metadata
+    id="metadata3723">
     <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs3721" />
-  <image
-     xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+    <cc:Work
+    rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+    rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+<defs
+id="defs3721" />
+<image
+xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADpAV4DASIA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
@@ -1385,22 +1350,21 @@ TUMaIWI/KoJGAH9alb7q/T+tVJPup9B/Os2zRIaW5z0pARzjj8Kav9KT+D8f61JQ7Pr1oB6Ukf3R
 BzxUMm0AE5AJ60i/6tPxon/1Q/D+VN6oSWpRm/1Z65Hasy5YgEnpWpN/F/nsKzrr7v4/0rJmsTMm
 Xr647dqybuNg2UU9eDWxL0b6N/Kqd79yP6n+lCLP/9k=
 "
-     x="0"
-     y="0"
-     width="350"
-     height="233"
-     id="image3725" />
+x="0"
+y="0"
+width="350"
+height="233"
+id="image3725" />
 </svg>
-                            <div class="portfolio-item-title">
-                               Maquiadores(as)
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                         <div class="portfolio-item">
-                           <%# image_tag "designer-de-sobrancelha.svg", alt: "Designers de Sobrancelha", width: '350', height: '233' %>
-                           <svg
+<div class="portfolio-item-title">
+ Maquiadores(as)
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+ <div class="portfolio-item">
+   <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -1411,22 +1375,22 @@ Xr647dqybuNg2UU9eDWxL0b6N/Kqd79yP6n+lCLP/9k=
    width="350"
    height="233"
    id="svg3317">
-  <metadata
-     id="metadata3323">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs3321" />
-  <image
-     xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+   <metadata
+   id="metadata3323">
+   <rdf:RDF>
+   <cc:Work
+   rdf:about="">
+   <dc:format>image/svg+xml</dc:format>
+   <dc:type
+   rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+   <dc:title></dc:title>
+ </cc:Work>
+</rdf:RDF>
+</metadata>
+<defs
+id="defs3321" />
+<image
+xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADpAV4DASIA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
@@ -1606,48 +1570,47 @@ M+B0qBe1S/w0XEyJ271XfJqZqhfrUspFaTpUEcRlkwrc1NN0pLD/AI/RSgrysEnZNnT6baLDECQN
 xFaqrtWqsPRKuN90V6CRwNixr3NPbpgUkf3aG+9TEOXipO1RinnpTAbwTS9qQdadQIQ9KRc0GnDp
 QMhkx3rPuLYMSycGr83Wom6UmrgZkcxjbY/FZWs2+5ldR19K07v79V7r/VJ9amOjsDP/2Q==
 "
-     x="0"
-     y="0"
-     width="350"
-     height="233"
-     id="image3325" />
+x="0"
+y="0"
+width="350"
+height="233"
+id="image3325" />
 </svg>
-                            <div class="portfolio-item-title">
-                               Designers de Sobrancelha
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                         <div class="portfolio-item">
-                            <%# image_tag "especialista-penteados.svg", alt: "Especialistas em Penteados", width: '350', height: '233' %>
-                            <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="350"
-   height="233"
-   id="svg3477">
+<div class="portfolio-item-title">
+ Designers de Sobrancelha
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+ <div class="portfolio-item">
+  <svg
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.1"
+  width="350"
+  height="233"
+  id="svg3477">
   <metadata
-     id="metadata3483">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs3481" />
-  <image
-     xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+  id="metadata3483">
+  <rdf:RDF>
+  <cc:Work
+  rdf:about="">
+  <dc:format>image/svg+xml</dc:format>
+  <dc:type
+  rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  <dc:title></dc:title>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs
+id="defs3481" />
+<image
+xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADpAV4DASIA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
@@ -1903,200 +1866,128 @@ Jh/tuAD9ep/lTj9w/SqUf32rrikZyG3s13cTplh5a9ER8gVJbSDYrMeTzzUV50X/AHar2n/H1H9a
 7if79YT2NUalozzlljUs7NgYrorTZZxeWSss+QS3ULgHp789axfDP/IQ/P8ArWrH1P8AvVztal3L
 ziW/bcD8yjhDxxVJgysVI5HrWlpv/H3F+P8AWq+p/wDHwP8AdH8qF2Ez/9k=
 "
-     x="0"
-     y="0"
-     width="350"
-     height="233"
-     id="image3485" />
+x="0"
+y="0"
+width="350"
+height="233"
+id="image3485" />
 </svg>
-                            <div class="portfolio-item-title">
-                               Hair Stylist
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                     </div>
-                  </div>
-                     <div class="clearfix"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <!-- Recent work end-->
-      <!-- Features start -->  
-
-      <!-- Features End -->
-      <div class="features bottom-pad" id="CadastreSe">
-        <% ab_test "prices", "low", "medium", "high" do |price| %>
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h3 class="title">Cadastre-se</h3>
-                        <!-- pricing table -->
-                        <div class="p_table">
-                           <!-- column style 1 -->
-                           <div class="column_1">
-                              <ul>
-                                 <!-- column header -->
-                                 <li class="header_row_1 align_center">
-                                    <h2 class="col1">Individual</h2>
-                                 </li>
-                                 <li class="header_row_2 align_center">
-                                    <h1 class="col1">R$<span><%= get(price, :indiv) %></span></h1>
-                                    <h3 class="col1">por mês</h3>
-                                 </li>
-                                 <!-- data rows -->
-                                 <li class="row_style_3 align_center"><span>1 Funcionário / Autônomo</span></li>
-                                 <li class="row_style_1 align_center"><span>Fotos Ilimitadas</span></li>
-                                 <li class="row_style_3 align_center"><span>Agenda On-Line</span></li>
-                                 <li class="row_style_1 align_center"><span>2 Meses Grátis</span></li>
-                                 <!-- column footer -->
-                                  <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
-                              </ul>
-                           </div>
-                           <!-- column style 2 -->
-                           <div class="column_4">
-                              <ul>
-                                 <!-- column header -->
-                                 <li class="header_row_1 align_center">
-                                    <h2 class="col2">Básico</h2>
-                                 </li>
-                                 <li class="header_row_2 align_center">
-                                    <h1 class="col2">R$<span><%= get(price, :basic) %></span></h1>
-                                    <h3 class="col2">por mês</h3>
-                                 </li>
-                                 <!-- data rows -->
-                                 <li class="row_style_4 align_center"><span>Até 3 Funcionários</span></li>
-                                 <li class="row_style_2 align_center"><span>Fotos Ilimitadas</span></li>
-                                 <li class="row_style_4 align_center"><span>Agenda On-Line</span></li>
-                                 <li class="row_style_2 align_center"><span>2 Meses Grátis</span></li>
-                                 <!-- column footer -->
-                                 <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
-                              </ul>
-                           </div>
-                           <!-- column style 3 -->
-                           <div class="column_3">
-                              <ul>
-                                 <!-- column header -->
-                                 <li class="header_row_1 align_center">
-                                    <h2 class="col3">Empresas</h2>
-                                 </li>
-                                 <li class="header_row_2 align_center">
-                                    <h1 class="col3">R$<span><%= get(price, :busin) %></span></h1>
-                                    <h3 class="col3">por mês</h3>
-                                 </li>
-                                 <!-- data rows -->
-                                 <li class="row_style_3 align_center"><span>Até 6 Funcionários</span></li>
-                                 <li class="row_style_2 align_center"><span>Fotos Ilimitadas</span></li>
-                                 <li class="row_style_4 align_center"><span>Agenda On-Line</span></li>
-                                 <li class="row_style_2 align_center"><span>2 Meses Grátis</span></li>
-                                 <!-- column footer -->
-                                 <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
-                              </ul>
-                           </div>
-                           <!-- column style 4 -->
-                           <div class="column_3">
-                              <ul>
-                                 <!-- column header -->
-                                 <li class="header_row_1 align_center">
-                                    <h2 class="col4">Impérios</h2>
-                                 </li>
-                                 <li class="header_row_2 align_center">
-                                    <h1 class="col4">R$<span><%= get(price, :empire) %></span></h1>
-                                    <h3 class="col4">mês</h3>
-                                 </li>
-                                 <!-- data rows -->
-                                 <li class="row_style_3 align_center"><span>Sem Limite de Funcionários</span></li>
-                                 <li class="row_style_2 align_center"><span>Fotos Ilimitadas</span></li>
-                                 <li class="row_style_4 align_center"><span>Agenda On-Line</span></li>
-                                 <li class="row_style_2 align_center"><span>2 Meses Grátis</span></li>
-                                 <!-- column footer -->
-                                 <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="clearfix"></div>
-                     </div>
-            </div>
-         </div>
-        <% end %>
-      </div>
-   </div>
- 
-     </div>
-  </div>
-  <!-- Main Content end-->
-   <!-- Content End -->
-   <!-- Footer Start -->
-   <footer id="footer">
-      <!-- Footer Top Start -->
-      <!-- <div class="footer-top">
-         <div class="container">
-            <div class="row">
-               <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-one">
-                  <h3>About</h3>
-                  <p> 
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
-                  </p>
-               </section>
-               <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-two">
-                  <h3>Twitter Stream</h3>
-                  <ul id="tweets">
-                  </ul>
-               </section>
-               <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-three">
-                  <h3>Contact Us</h3>
-                  <ul class="contact-us">
-                     <li>
-                        <i class="fa fa-map-marker"></i>
-                        <p> 
-                           <strong class="contact-pad">Address:</strong> House: 325, Road: 2,<br> Mirpur DOHS <br>
-                           Dhaka, Bangladesh 
-                        </p>
-                     </li>
-                     <li>
-                        <i class="fa fa-phone"></i>
-                        <p><strong>Phone:</strong> +880 111-111-111</p>
-                     </li>
-                     <li>
-                        <i class="fa fa-envelope"></i>
-                        <p><strong>Email:</strong><a href="mailto:support@fifothemes.com">support@fifothemes.com</a></p>
-                     </li>
-                  </ul>
-               </section>
-               <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-four">
-                  <h3>Flickr Photostream</h3>
-                  <ul id="flickrfeed" class="thumbs"></ul>
-               </section>
-            </div>
-         </div>
-      </div> -->
-      <!-- Footer Top End --> 
-      <!-- Footer Bottom Start -->
-      <div class="footer-bottom">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 "> &copy; Copyright 2015 by SafiraSalões. Todos os direitos reservados. </div>
-               <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
-                  <ul class="contact-us">
-                     <li>
-                        <i class="fa fa-map-marker"></i>
-                        <p> 
-                           <strong class="contact-pad">Endereço:</strong> Av dos Engenheiros, 431, sala 802 - Castelo,<br> Belo Horizonte - Minas Gerais <br>
-                        </p>
-                     </li>
-                     <li>
-                        <i class="fa fa-envelope"></i>
-                        <p><strong>Email:</strong><a href="mailto:contato@safirasaloes.com.br">contato@safirasaloes.com.br</a></p>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Footer Bottom End --> 
-   </footer>
-   <!-- Scroll To Top --> 
-   <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+<div class="portfolio-item-title">
+ Hair Stylist
 </div>
-<!-- Wrap End -->
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="features bottom-pad" id="CadastreSe">
+  <% ab_test "prices", "low", "medium", "high" do |price| %>
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="title">Cadastre-se</h3>
+      <div class="p_table">
+       <div class="column_1">
+        <ul>
+         <li class="header_row_1 align_center">
+          <h2 class="col1">Individual</h2>
+        </li>
+        <li class="header_row_2 align_center">
+          <h1 class="col1">R$<span><%= get(price, :indiv) %></span></h1>
+          <h3 class="col1">por mês</h3>
+        </li>
+        <li class="row_style_3 align_center"><span>1 Funcionário / Autônomo</span></li>
+        <li class="row_style_1 align_center"><span>Fotos Ilimitadas</span></li>
+        <li class="row_style_3 align_center"><span>Agenda On-Line</span></li>
+        <li class="row_style_1 align_center"><span>2 Meses Grátis</span></li>
+        <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
+      </ul>
+    </div>
+    <div class="column_4">
+      <ul>
+       <li class="header_row_1 align_center">
+        <h2 class="col2">Básico</h2>
+      </li>
+      <li class="header_row_2 align_center">
+        <h1 class="col2">R$<span><%= get(price, :basic) %></span></h1>
+        <h3 class="col2">por mês</h3>
+      </li>
+      <li class="row_style_4 align_center"><span>Até 3 Funcionários</span></li>
+      <li class="row_style_2 align_center"><span>Fotos Ilimitadas</span></li>
+      <li class="row_style_4 align_center"><span>Agenda On-Line</span></li>
+      <li class="row_style_2 align_center"><span>2 Meses Grátis</span></li>
+      <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
+    </ul>
+  </div>
+  <div class="column_3">
+    <ul>
+     <li class="header_row_1 align_center">
+      <h2 class="col3">Empresas</h2>
+    </li>
+    <li class="header_row_2 align_center">
+      <h1 class="col3">R$<span><%= get(price, :busin) %></span></h1>
+      <h3 class="col3">por mês</h3>
+    </li>
+    <li class="row_style_3 align_center"><span>Até 6 Funcionários</span></li>
+    <li class="row_style_2 align_center"><span>Fotos Ilimitadas</span></li>
+    <li class="row_style_4 align_center"><span>Agenda On-Line</span></li>
+    <li class="row_style_2 align_center"><span>2 Meses Grátis</span></li>
+    <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
+  </ul>
+</div>
+<div class="column_3">
+  <ul>
+   <li class="header_row_1 align_center">
+    <h2 class="col4">Impérios</h2>
+  </li>
+  <li class="header_row_2 align_center">
+    <h1 class="col4">R$<span><%= get(price, :empire) %></span></h1>
+    <h3 class="col4">mês</h3>
+  </li>
+  <li class="row_style_3 align_center"><span>Sem Limite de Funcionários</span></li>
+  <li class="row_style_2 align_center"><span>Fotos Ilimitadas</span></li>
+  <li class="row_style_4 align_center"><span>Agenda On-Line</span></li>
+  <li class="row_style_2 align_center"><span>2 Meses Grátis</span></li>
+  <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
+</ul>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<% end %>
+</div>
+</div>
+
+</div>
+</div>
+<footer id="footer">
+ <div class="footer-bottom">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 "> &copy; Copyright 2015 by SafiraSalões. Todos os direitos reservados. </div>
+     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
+      <ul class="contact-us">
+       <li>
+        <i class="fa fa-map-marker"></i>
+        <p> 
+         <strong class="contact-pad">Endereço:</strong> Av dos Engenheiros, 431, sala 802 - Castelo,<br> Belo Horizonte - Minas Gerais <br>
+       </p>
+     </li>
+     <li>
+      <i class="fa fa-envelope"></i>
+      <p><strong>Email:</strong><a href="mailto:contato@safirasaloes.com.br">contato@safirasaloes.com.br</a></p>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+</div>
