@@ -8,16 +8,12 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg3705"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
    width="350"
    height="233"
-   sodipodi:docname="maquiador.jpg">
+   id="svg3717">
   <metadata
-     id="metadata3711">
+     id="metadata3723">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -29,30 +25,8 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs3709" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
-     id="namedview3707"
-     showgrid="false"
-     inkscape:zoom="0.82285714"
-     inkscape:cx="175"
-     inkscape:cy="116.5"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3705" />
+     id="defs3721" />
   <image
-     width="350"
-     height="233"
      xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADpAV4DASIA
@@ -288,7 +262,9 @@ TUMaIWI/KoJGAH9alb7q/T+tVJPup9B/Os2zRIaW5z0pARzjj8Kav9KT+D8f61JQ7Pr1oB6Ukf3R
 BzxUMm0AE5AJ60i/6tPxon/1Q/D+VN6oSWpRm/1Z65Hasy5YgEnpWpN/F/nsKzrr7v4/0rJmsTMm
 Xr647dqybuNg2UU9eDWxL0b6N/Kqd79yP6n+lCLP/9k=
 "
-     id="image3713"
      x="0"
-     y="0" />
+     y="0"
+     width="350"
+     height="233"
+     id="image3725" />
 </svg>

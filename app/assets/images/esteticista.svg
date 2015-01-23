@@ -8,16 +8,12 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg3503"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
    width="350"
    height="233"
-   sodipodi:docname="esteticista.jpg">
+   id="svg3557">
   <metadata
-     id="metadata3509">
+     id="metadata3563">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -29,30 +25,8 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs3507" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
-     id="namedview3505"
-     showgrid="false"
-     inkscape:zoom="0.82285714"
-     inkscape:cx="175"
-     inkscape:cy="116.5"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3503" />
+     id="defs3561" />
   <image
-     width="350"
-     height="233"
      xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADpAV4DASIA
@@ -262,7 +236,9 @@ n5FMFFMgfmlzUdKKAEdqqOcvVh+hqr/FSY0Sp1rSslw1ZsdallQhSLhOBiomqRqiNMgjciq5OTU0
 lQnrQyhaikOSBUg6VFJ96kCAZFG7PWgfdpooGSBfSrMS5xUEfarUXUU0Sywq4GTSE5FD9KYelMQ4
 HFNLUdqaaAGs2KiLU9+tRUAf/9k=
 "
-     id="image3511"
      x="0"
-     y="0" />
+     y="0"
+     width="350"
+     height="233"
+     id="image3565" />
 </svg>

@@ -8,16 +8,12 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg3119"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
    width="350"
    height="233"
-   sodipodi:docname="manicure-pedicure.jpg">
+   id="svg3637">
   <metadata
-     id="metadata3125">
+     id="metadata3643">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -29,30 +25,8 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs3123" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
-     id="namedview3121"
-     showgrid="false"
-     inkscape:zoom="2.5622318"
-     inkscape:cx="175"
-     inkscape:cy="116.5"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3119" />
+     id="defs3641" />
   <image
-     width="350"
-     height="233"
      xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADpAV4DASIA
@@ -315,7 +289,9 @@ yV9jVRdtyiDnov5kD+dKzIMkkfWoT1T6mopP9T+JrTcVrF6OVEUBgCf9k/zqMkAg5HPqKhtepq03
 Ral6Mpaoki3YPy/kKcwkz8vA91qk/Q1Yg6fjWbb3LURwMgbDOgHqD/8AXqGed2QrDIxIPPSluvuf
 nUUH+tX6VUdria1sSyR7oBiRw564JBqeG0iVPmZnPqSTUc3+FbVl/wAef/AqzlNqI7JM/9k=
 "
-     id="image3127"
      x="0"
-     y="0" />
+     y="0"
+     width="350"
+     height="233"
+     id="image3645" />
 </svg>

@@ -125,4 +125,5 @@ Rails.application.config.assets.precompile += %w( img/ico/favicon.ico
                                                   img/placeholder-img.jpg
                                                   img/recent-post-img.jpg
                                                   img/search-icon.png
-                                                  img/loader.gif )
+                                                  img/loader.gif
+                                                  img/slider/slider-bg-11.svg )
