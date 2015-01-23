@@ -139,6 +139,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.0.0)
   csso-rails
+  execjs
   jbuilder (~> 2.0)
   mysql2
   newrelic_rpm
