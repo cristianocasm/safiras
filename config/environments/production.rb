@@ -1,7 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.assets.precompile += %w[ *jpg *.svg *.gif *.png *.woff *.eot *.ttf ]
+  config.assets.precompile += %w[ *jpg *.svg *svgz *.gif *.png *.woff *.eot *.ttf ]
 
   # Code is not reloaded between requests.
   config.cache_classes = true
