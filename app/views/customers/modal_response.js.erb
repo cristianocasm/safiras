@@ -1,0 +1,6 @@
+$('#myModal').modal('toggle')
+<% if @customer.persisted? %>
+  $('#myModalSuccess').modal('show')
+<% else %>
+  $('#myModalFail').modal('show')
+<% end %>

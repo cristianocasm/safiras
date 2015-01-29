@@ -1,0 +1,97 @@
+/*Blue #0488cd */
+.subscribe-btn, .progress .progress-bar, .accordionMod .panel-heading .current, #current:after, .tp-leftarrow.default:hover,.tp-rightarrow.default:hover, .nivo-prevNav:hover, .nivo-nextNav:hover, .contact-box:hover, #options li a.selected, .ch-info .ch-info-back {
+    background: #7ec78b;
+}
+
+.ch-info-front, .ch-img-1{
+  background: #7ec78b;
+}
+
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .pager li > a:hover, .pager li > a:focus, .navbar-toggle i, .cn-wrapper li a, .cn-wrapper:after {
+    background-color: #0f8944;
+    color: #fff;
+}
+
+.spinner {
+    border-top-color: #2EAEF0;
+}
+
+.hero {
+    border-left-color: #0f8944;
+}
+
+#options li a.selected {
+	border: 1px solid #0f8944;
+}
+
+.ie8 .btn-color, .ie9 .btn-color {
+	background: #0f8944 !important;
+}
+
+.ie8 .btn-color:hover, .ie9 .btn-color:hover {
+	background: #2eaef0 !important;
+}
+
+.btn-color-shadow:hover, .subscribe-btn-shadow:hover {
+	background: -webkit-linear-gradient(#777,#555);
+	background: -moz-linear-gradient(#777,#555);
+	background: -o-linear-gradient(#777,#555);
+	background: -ms-linear-gradient(#777,#555);
+	background: linear-gradient(#777,#555);
+  color: #fff;
+}
+
+.btn-color-shadow, .subscribe-btn-shadow {
+	background: #777777;
+	border: 1px solid #777777;
+  color: #fff;
+	cursor: pointer;
+}
+
+.btn-color:hover, .subscribe-btn:hover {
+  background: -webkit-linear-gradient(#FF8A00, #FF8A00);
+  background: -moz-linear-gradient(#FF8A00, #FF8A00);
+  background: -o-linear-gradient(#FF8A00, #FF8A00);
+  background: -ms-linear-gradient(#FF8A00, #FF8A00);
+  background: linear-gradient(#FF8A00, #FF8A00);
+}
+
+.btn-color, .subscribe-btn {
+  background: -webkit-linear-gradient(#70bf2e, #70bf2e); /*(#2eaef0,#0488cd);*/
+  background: -moz-linear-gradient(#FF8A00, #FF8A00); /*(#2eaef0,#0488cd);*/
+  background: -o-linear-gradient(#FF8A00, #FF8A00); /*(#2eaef0,#0488cd);*/
+  background: -ms-linear-gradient(#FF8A00, #FF8A00); /*(#2eaef0,#0488cd);*/
+  background: linear-gradient(#FF8A00, #FF8A00); /*(#2eaef0,#0488cd);*/
+  border: 1px solid #FF8A00; /*2f7295;*/
+  cursor: pointer;
+}
+
+
+#current,.menu ul li a:hover,.menu ul>li:hover>a {
+    border-bottom: 3px solid #0f8944;
+}
+
+ul.why li:before {
+    background: #0f8944;
+}
+
+.menu ul ul {
+    border-top: 3px solid #0f8944 !important;
+}
+
+#horizontal-tabs ul.tabs li.current {
+    border-top: 2px solid #0f8944;
+}
+
+#vertical-tabs ul.tabs li.current {
+    border-left: 2px solid #0f8944;
+}
+
+.author-content, div.content-box.big, #cn-tabs .service, .comment-des, .contact-box {
+	border-bottom-color:#0f8944;
+}
+
+a, .post-item h4 a:hover, .cn-wrapper li a:hover, .cn-wrapper li a.active, .color {
+    color: #0f8944;
+}

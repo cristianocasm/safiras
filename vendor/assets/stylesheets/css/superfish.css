@@ -63,7 +63,7 @@
 	text-decoration:none;
 }
 .menu ul>li>a {
-	color:#fff;
+	/*color:#fff;*/
 	font-weight:400;
 	font-size:14px;
 	line-height:18px;
@@ -77,7 +77,7 @@
 }
 
 #current,.menu ul li a:hover,.menu ul>li:hover>a {
-		background-color:#252c34;
+		background-color: #c4e2bb; /*#252c34;*/
 }
 #current:after {
 	bottom:-2.5px;

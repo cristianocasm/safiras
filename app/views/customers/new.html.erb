@@ -1,40 +1,82 @@
-<div class="page-mask">
-  <div class="page-loader"> 
-    <div class="spinner"></div>
-    Loading...
-  </div>
-</div>
-<div class="wrap">
- <header id="header">
-  <div class="main-header">
-   <div class="container" id="myScrollSpy">
-    <div class="logo pull-left">
-     <h1>
-      <a href="index.html">
-        <%= image_tag 'img/logo.png', alt: 'pixma', width: '125', height: '60' %>
-      </a>
-    </h1>
-  </div>
-  <nav class="collapse navbar-collapse menu">
-   <ul class="nav nav-tabs navbar-nav sf-menu" role="tablist">
-    <li>
-     <a href="#OQueE"> O que é? </a>
-   </li>
-   <li>
-     <a href="#PorQueUsar"> Por que usar? </a>
-   </li>
-   <li>
-     <a href="#ServePraMim" class="sf-with-ul"> Serve pra Mim? </a>
-   </li>
-   <li>
-     <a href="#CadastreSe" class="sf-with-ul"> Cadastre-se </a>
-   </li>
- </ul>
-</nav>
-</div>
+    <div class="page-mask">
+      <div class="page-loader"> 
+        <div class="spinner"></div>
+        Loading...
+      </div>
+    </div>
+    <div class="wrap">
+     <header id="header">
+      <div class="main-header">
+       <div class="container" id="myScrollSpy">
+        <div class="logo pull-left">
+         <h1>
+          <%= link_to image_tag('logo.png'), root_path %>
+        </h1>
+      </div>
+      <nav class="collapse navbar-collapse menu">
+       <ul class="nav nav-tabs navbar-nav sf-menu" role="tablist">
+        <li>
+         <a href="#OQueE"> O que é? </a>
+       </li>
+       <li>
+         <a href="#PorQueUsar"> Por que usar? </a>
+       </li>
+       <li>
+         <a href="#ServePraMim" class="sf-with-ul"> Serve pra Mim? </a>
+       </li>
+       <li>
+         <a href="#CadastreSe" class="sf-with-ul"> Cadastre-se </a>
+       </li>
+     </ul>
+   </nav>
+ </div>
 </div>
 </header>
 <div id="main">
+  <div class="modal fade" id="myModalFail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">UM ERRO INESPERADO OCORREU</h4>
+        </div>
+        <div class="modal-body">
+          Infelizmente seu cadastro não pôde ser realizado. Tente novamente.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">OBRIGADO!</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            Obrigado pelo seu interesse em utilizar o SafiraSalões. Estamos certos de que com o nosso sistema você aumentará seus rendimentos mensais e conquistará seus sonhos.
+          </p>
+
+          <p>
+            No momento as inscrições estão suspensas, mas seus dados foram salvos e entraremos em contato em breve.
+          </p>
+
+          <p>
+            Obrigado!
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -56,7 +98,14 @@
    <div class="fullwidthbanner rslider">
      <ul>
        <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on">
-         <%= image_tag "img/slider/slider-bg-11.svg", alt: "Pixma", 'data-lazyload' => image_path("img/slider/slider-bg-11.svg"), 'data-bgposition' => "center top", 'data-bgfit' => "cover", 'data-bgrepeat' => "no-repeat" %>
+         <%= image_tag "bkg-green.jpg", alt: "Pixma", 'data-lazyload' => image_path("bkg-green.jpg"), 'data-bgposition' => "center top", 'data-bgfit' => "cover", 'data-bgrepeat' => "no-repeat" %>
+         <div class="caption sft"
+           data-x="590"
+           data-y="40"
+           data-speed="600"
+           data-start="800"  >
+           <iframe src="//player.vimeo.com/video/93972085?byline=0&amp;portrait=0&amp;autoplay=0" width="580" height="328" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+         </div>
          <div class="caption large_text lfl"
          data-x="0"
          data-y="40"
@@ -114,14 +163,6 @@
        <h5 class="dblue"> Agenda On-line para Marcação de Horários</h5>
      </div>
    </div>
-
-   <div class="caption sft"
-   data-x="590"
-   data-y="40"
-   data-speed="600"
-   data-start="800"  >
-   <iframe src="//player.vimeo.com/video/93972085?byline=0&amp;portrait=0&amp;autoplay=0" width="580" height="328" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
- </div>
 </li>
 </ul>
 </div>
@@ -135,7 +176,7 @@
    </div>
    <div class="col-lg-3 col-md-3">
      <div class="get-started">
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      <button type="button" class="btn btn-primary btn-lg btn-color" data-toggle="modal" data-target="#myModal">
         Teste Grátis por 2 Meses
       </button>
     </div>
@@ -1888,78 +1929,69 @@ id="image3485" />
   <% ab_test "prices", "low", "medium", "high" do |price| %>
   <div class="container">
     <div class="row">
-     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+     <div class="col-lg-12">
       <h3 class="title">Cadastre-se</h3>
-      <div class="p_table">
+      <!-- pricing table -->
+      <div class="p_table three-col">
+       <!-- column style 1 -->
        <div class="column_1">
         <ul>
+         <!-- column header -->
          <li class="header_row_1 align_center">
           <h2 class="col1">Individual</h2>
         </li>
         <li class="header_row_2 align_center">
-          <h1 class="col1">R$<span><%= get(price, :indiv) %></span></h1>
+          <h1 class="col1">R$<span>37</span></h1>
           <h3 class="col1">por mês</h3>
         </li>
+        <!-- data rows -->
         <li class="row_style_3 align_center"><span>1 Funcionário / Autônomo</span></li>
         <li class="row_style_1 align_center"><span>Fotos Ilimitadas</span></li>
         <li class="row_style_3 align_center"><span>Agenda On-Line</span></li>
         <li class="row_style_1 align_center"><span>2 Meses Grátis</span></li>
-        <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
+        <li class="footer_row"><a href="" class="sign_up subscribe-btn-shadow btn-small" data-toggle="modal" data-target="#myModal">Pegue Aqui 2 Meses<br /><b class="big">Grátis</b></a></li>
       </ul>
     </div>
-    <div class="column_4">
+    <!-- column style 2 -->
+    <div class="column_3">
       <ul>
+       <!-- column header -->
        <li class="header_row_1 align_center">
         <h2 class="col2">Básico</h2>
       </li>
       <li class="header_row_2 align_center">
-        <h1 class="col2">R$<span><%= get(price, :basic) %></span></h1>
+        <h1 class="col2">R$<span>67</span></h1>
         <h3 class="col2">por mês</h3>
       </li>
-      <li class="row_style_4 align_center"><span>Até 3 Funcionários</span></li>
+      <!-- data rows -->
+      <li class="row_style_4 align_center"><span>Até 5 Funcionários</span></li>
       <li class="row_style_2 align_center"><span>Fotos Ilimitadas</span></li>
       <li class="row_style_4 align_center"><span>Agenda On-Line</span></li>
       <li class="row_style_2 align_center"><span>2 Meses Grátis</span></li>
-      <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
+      <li class="footer_row"><a href="" class="sign_up btn-small btn-color" data-toggle="modal" data-target="#myModal">Pegue Aqui 2 Meses<br /><b class="big">Grátis</b></a></li>
     </ul>
   </div>
-  <div class="column_3">
+  <!-- column style 3 -->
+  <div class="column_2">
     <ul>
+     <!-- column header -->
      <li class="header_row_1 align_center">
       <h2 class="col3">Empresas</h2>
     </li>
     <li class="header_row_2 align_center">
-      <h1 class="col3">R$<span><%= get(price, :busin) %></span></h1>
+      <h1 class="col3">R$<span>297</span></h1>
       <h3 class="col3">por mês</h3>
     </li>
-    <li class="row_style_3 align_center"><span>Até 6 Funcionários</span></li>
+    <!-- data rows -->
+    <li class="row_style_3 align_center"><span>Até 30 Funcionários</span></li>
     <li class="row_style_2 align_center"><span>Fotos Ilimitadas</span></li>
     <li class="row_style_4 align_center"><span>Agenda On-Line</span></li>
     <li class="row_style_2 align_center"><span>2 Meses Grátis</span></li>
-    <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
+    <li class="footer_row"><a href="" class="sign_up btn-color-shadow btn-small" data-toggle="modal" data-target="#myModal">Pegue Aqui 2 Meses<br /><b class="big">Grátis</b></a></li>
   </ul>
-</div>
-<div class="column_3">
-  <ul>
-   <li class="header_row_1 align_center">
-    <h2 class="col4">Impérios</h2>
-  </li>
-  <li class="header_row_2 align_center">
-    <h1 class="col4">R$<span><%= get(price, :empire) %></span></h1>
-    <h3 class="col4">mês</h3>
-  </li>
-  <li class="row_style_3 align_center"><span>Sem Limite de Funcionários</span></li>
-  <li class="row_style_2 align_center"><span>Fotos Ilimitadas</span></li>
-  <li class="row_style_4 align_center"><span>Agenda On-Line</span></li>
-  <li class="row_style_2 align_center"><span>2 Meses Grátis</span></li>
-  <li class="footer_row"><a href="" class="sign_up btn-color btn-small" data-toggle="modal" data-target="#myModal">Teste Grátis</a></li>
-</ul>
 </div>
 </div>
 <div class="clearfix"></div>
-</div>
-</div>
-</div>
 <% end %>
 </div>
 </div>
