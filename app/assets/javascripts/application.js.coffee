@@ -16,9 +16,7 @@
 #= require js/jquery-ui
 #= require js/bootstrap
 #= require js/jquery.parallax
-#= require js/jquery.wait
 #= require js/modernizr-2.6.2.min
-#= require js/modernizr.custom
 #= require js/revolution-slider/js/jquery.themepunch.tools.min
 #= require js/revolution-slider/js/jquery.themepunch.revolution.min
 #= require js/jquery.nivo.slider.pack
@@ -27,11 +25,8 @@
 #= require js/tweetMachine
 #= require js/tytabs
 #= require js/jquery.gmap.min
-#= require js/circularnav
 #= require js/jquery.sticky
 #= require js/jflickrfeed
-#= require js/imagesloaded.pkgd.min
-#= require js/waypoints.min
 #= require js/custom
 #= require jquery.mask
 #= require_tree .
@@ -45,10 +40,4 @@ jQuery ->
     scrollBy(0, -170);
 
   $('#contact').submit ->
-    #alert("Aqui")
-    $('#contact').submit()
-      #$.post('http://path/to/post', 
-      #   $('#myForm').serialize(), 
-      #   function(data, status, xhr){
-      #     // do something here with response;
-      #   });
+    request = $.post('/customers', $('#contact').serialize())
