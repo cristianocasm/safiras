@@ -1,6 +1,5 @@
-$('#myModal').modal('toggle')
 <% if @customer.persisted? %>
-  $('#myModalSuccess').modal('show')
+  location.href = "<%= obrigado_url %>"
 <% else %>
   $('#myModalFail').modal('show')
 <% end %>

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'customers#new'
   post 'customers' => 'customers#create'
+  get 'obrigado' => 'customers#obrigado'
 
 
   mount Split::Dashboard, at: 'testes_ab'
