@@ -49,3 +49,10 @@ gem 'mysql2'
 gem 'csso-rails'
 
 gem 'execjs'
+
+group :test do
+  gem 'shoulda' # Adiciona métodos simples para testes
+  gem 'minitest-reporters' # Cria output dos testes colorido
+  gem 'capybara'
+  gem 'selenium-webdriver'
+end

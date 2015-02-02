@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   post 'customers' => 'customers#create'
   get 'obrigado' => 'customers#obrigado'
 
-
   mount Split::Dashboard, at: 'testes_ab'
 
   # The priority is based upon order of creation: first created -> highest priority.

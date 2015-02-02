@@ -1,4 +1,4 @@
-require 'test_helper'
+# require 'test_helper'
 
-class StaticPagesHelperTest < ActionView::TestCase
-end
+# class StaticPagesHelperTest < ActionView::TestCase
+# end

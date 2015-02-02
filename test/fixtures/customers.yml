@@ -2,8 +2,8 @@
 
 one:
   nome: MyString
-  email: MyString
-  telefone: MyString
+  email: MyString@test.com.br
+  telefone: (31) 3333-3333
   dispositivo: MyString
   price: MyString
 
