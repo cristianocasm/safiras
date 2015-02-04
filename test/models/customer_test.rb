@@ -4,6 +4,8 @@ class CustomerTest < ActiveSupport::TestCase
   should validate_presence_of(:nome)
   should validate_presence_of(:email)
   should validate_presence_of(:telefone)
+  should validate_presence_of(:profissao)
+  should validate_presence_of(:endereco)
 
   def setup
     @c = customers(:one)
@@ -29,11 +31,19 @@ class CustomerTest < ActiveSupport::TestCase
     assert_respond_to @c, :price
   end
 
+  test "se customer possui parâmetro 'profissao'" do
+    assert_respond_to @c, :profissao
+  end
+
+  test "se customer possui parâmetro 'endereco'" do
+    assert_respond_to @c, :endereco
+  end
+
   test "se é válido com todos os atributos" do
     assert @c.valid?
   end
 
-  test "se é válido com atributos 'nome', 'email', 'telefone'" do
+  test "se é válido com atributos 'nome', 'email', 'telefone', 'profissao' e 'endereco'" do
     @c.dispositivo = nil
     @c.price = nil
     assert @c.valid?

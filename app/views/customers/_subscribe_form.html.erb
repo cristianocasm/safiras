@@ -13,6 +13,16 @@
             <%= f.text_field :telefone, class: "form-control small telefone", value: "", required: true, placeholder: "Telefone" %>
          </div>
       </div>
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <%= f.text_field :endereco, class: "form-control small", value: "", required: true, placeholder: "Endereço Completo" %>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <%= f.text_field :profissao, class: "form-control small", value: "", required: true, placeholder: "Profissão (Cabeleireiro, Manicure / Pedicure, Esteticista...)" %>
+         </div>
+      </div>
       <%= f.hidden_field :dispositivo, value: request.user_agent %>
    </fieldset>
    <%= f.submit 'Eu Quero 2 Meses Grátis!', class: "btn-small btn-color btn-extended submit  bottom-pad" %>

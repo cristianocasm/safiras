@@ -6,10 +6,5 @@ one:
   telefone: (31) 3333-3333
   dispositivo: MyString
   price: MyString
-
-two:
-  nome: MyString
-  email: MyString
-  telefone: MyString
-  dispositivo: MyString
-  price: MyString
+  profissao: Cabeleireiro
+  endereco: 'Rua Tapajós, 353, Bairro Amazonas'

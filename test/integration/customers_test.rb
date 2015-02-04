@@ -24,7 +24,6 @@ class CustomersTest < ActionDispatch::IntegrationTest
   end
 
   test "submissão do formulário com dados válidos" do
-    skip("resolver problema bd")
     run_browser
     c = customers(:one)
 
@@ -33,9 +32,11 @@ class CustomersTest < ActionDispatch::IntegrationTest
     fill_in :customer_nome, with: c.nome
     fill_in :customer_email, with: c.email
     fill_in :customer_telefone, with: c.telefone
+    fill_in :customer_endereco, with: c.endereco
+    fill_in :customer_profissao, with: c.profissao
     click_button "Eu Quero 2 Meses Grátis"
 
-    assert_equal current_path, obrigado_path
+    assert_redirected_to obrigado_path
     within("h3.title") do
       assert has_content? "Obrigado"
     end
