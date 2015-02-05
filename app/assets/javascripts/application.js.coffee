@@ -41,3 +41,12 @@ jQuery ->
 
   $('#contact').submit ->
     request = $.post('/customers', $('#contact').serialize())
+
+  $('#premium').click ->
+    $('#customer_price').val('67')
+
+  $('#restrito').click ->
+    $('#customer_price').val('37')  
+
+  $('#sem_preco').click ->
+    $('#customer_price').val('00')
