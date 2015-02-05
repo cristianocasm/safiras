@@ -22,6 +22,7 @@ class ActiveSupport::TestCase
   def run_browser
     Selenium::WebDriver::Firefox::Binary.path='/home/cristiano/firefox/firefox'
     Capybara.current_driver = :selenium
+    skip("Evitando JS") if ENV["js"] == "false"
   end
 
 end

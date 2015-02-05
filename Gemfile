@@ -55,5 +55,4 @@ group :test do
   gem 'minitest-reporters' # Cria output dos testes colorido
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'minitest-metadata', :require => false
 end
