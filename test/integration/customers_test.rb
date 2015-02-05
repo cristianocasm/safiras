@@ -10,7 +10,7 @@ class CustomersTest < ActionDispatch::IntegrationTest
     end
   end
 
-  test "submissão formulário vazio" do # deve testar ausência dos três parâmetros
+  test "submissão formulário vazio" do
     run_browser
     
     visit "/"
@@ -36,6 +36,11 @@ class CustomersTest < ActionDispatch::IntegrationTest
     fill_in :customer_profissao, with: c.profissao
     click_button "Eu Quero 2 Meses Grátis"
 
+    # Dando pau porque redirecionamento é feito via AJAX
+    # e o método assert_redirected_to analisa o código de
+    # retorno - o qual não existe e um erro
+    # "undefined method `response_code' for nil:NilClass"
+    # é retornado 
     assert_redirected_to obrigado_path
     within("h3.title") do
       assert has_content? "Obrigado"
