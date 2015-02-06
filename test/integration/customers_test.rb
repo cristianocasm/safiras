@@ -1,13 +1,6 @@
 require 'test_helper'
 
 class CustomersTest < ActionDispatch::IntegrationTest
-  def fill_form(c)
-    fill_in :customer_nome, with: c.nome
-    fill_in :customer_email, with: c.email
-    fill_in :customer_telefone, with: c.telefone
-    fill_in :customer_endereco, with: c.endereco
-    fill_in :customer_profissao, with: c.profissao
-  end
 
   test "acesso à home page" do
     visit "/"
@@ -37,7 +30,11 @@ class CustomersTest < ActionDispatch::IntegrationTest
 
     visit "/"
     click_button "Sim! Quero Cadastrar Agora!"
-    fill_form(c)
+    fill_in :customer_nome, with: c.nome
+    fill_in :customer_email, with: c.email
+    fill_in :customer_telefone, with: c.telefone
+    fill_in :customer_endereco, with: c.endereco
+    fill_in :customer_profissao, with: c.customer_profissao
     click_button "Eu Quero mais Clientes AGORA!"
 
     # Dando pau porque redirecionamento é feito via AJAX

@@ -6,6 +6,7 @@ class CustomerTest < ActiveSupport::TestCase
   should validate_presence_of(:telefone)
   should validate_presence_of(:profissao)
   should validate_presence_of(:endereco)
+  should validate_uniqueness_of(:email)
 
   def setup
     @c = customers(:one)

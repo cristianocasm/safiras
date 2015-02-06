@@ -1,9 +1,11 @@
-<% if @customer.persisted? %>
+<% if @customer.persisted? || @customer.errors.added?(:email, :taken) %>
   location.href = "<%= obrigado_url %>"
 <% else %>
   <% if @customer.errors.added?(:nome, :blank) ||
         @customer.errors.added?(:email, :blank) ||
-        @customer.errors.added?(:telefone, :blank) %>
+        @customer.errors.added?(:telefone, :blank) ||
+        @customer.errors.added?(:endereco, :blank) ||
+        @customer.errors.added?(:profissao, :blank) %>
     $('#modal-body').prepend('<div class="error">Preencha todos os campos</div>')
   <% else %>
     $('#myModal').toggle()
