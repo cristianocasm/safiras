@@ -18,7 +18,7 @@
 #= require js/jquery.parallax
 #= require js/modernizr-2.6.2.min
 #= require js/revolution-slider/js/jquery.themepunch.tools.min
-#= require js/revolution-slider/js/jquery.themepunch.revolution.min
+#= require js/revolution-slider/js/jquery.themepunch.revolution
 #= require js/jquery.nivo.slider.pack
 #= require js/jquery.prettyPhoto
 #= require js/superfish
