@@ -8,7 +8,7 @@ class CustomersController < ApplicationController
   # POST /customers.json
   def create
     @customer = Customer.new(customer_params)
-    @customer.save
+    finished("publico", :reset => false) if @customer.save
 
     respond_to do |format|
       format.js { render "modal_response" }
