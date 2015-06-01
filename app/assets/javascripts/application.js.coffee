@@ -34,7 +34,7 @@
 jQuery ->
   $('.telefone').mask('(00) 0000-00009')
 
-  $('.main-header li a').click ->
+  $('.main-header li a.anchor').click ->
     event.preventDefault();
     $($(this).attr('href'))[0].scrollIntoView();
     scrollBy(0, -170);
