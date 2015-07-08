@@ -10,15 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= render "fb_pixel" if Rails.env.production? %>
   <%= favicon_link_tag 'favicon.png', rel: "shortcut icon" %>
 
   <%= render "analytics" %>
   <%= render "crazyegg" %>
-
-  <% if request.path == obrigado_path %>
-    <%= render "fb_conversion_pixel" %>
-    <%= render "noindex"  %>
-  <% end %>
   
 </head>
 <body class="home" data-spy="scroll" data-offset="250" data-target="#myScrollSpy">
