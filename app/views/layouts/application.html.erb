@@ -13,6 +13,7 @@
   <%= csrf_meta_tags %>
   <%= render "fb_pixel" if Rails.env.production? %>
   <%= render "kissmetrics.html" if Rails.env.production? %>
+  <%= render "woopra.html" if Rails.env.production? %>
   <%= favicon_link_tag 'favicon.png', rel: "shortcut icon" %>
 
   <%= render "analytics" %>
