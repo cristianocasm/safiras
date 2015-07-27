@@ -29,6 +29,7 @@
 #= require js/jflickrfeed
 #= require js/custom
 #= require jquery.mask
+#= require froogaloop
 #= require_tree .
 
 jQuery ->
@@ -50,3 +51,33 @@ jQuery ->
 
   $('#sem_preco').click ->
     $('#customer_price').val('00')
+
+  track_video_events()
+
+track_video_events = ->
+  iframe = $('#player1')[0]
+  player = $f(iframe)
+  # status = $('.status')
+  # When the player is ready, add listeners for pause, finish, and playProgress
+
+  onPause = (id) ->
+    console.log('paused')
+    # status.text 'paused'
+
+  onFinish = (id) ->
+    console.log('finished')
+    # status.text 'finished'
+
+  onPlayProgress = (data, id) ->
+    console.log('played')
+    # status.text data.seconds + 's played'
+
+  player.addEvent 'ready', ->
+    # status.text 'ready'
+    player.addEvent 'pause', onPause
+    player.addEvent 'finish', onFinish
+    player.addEvent 'playProgress', onPlayProgress
+
+  # Call the API when a button is pressed
+  # $('button').bind 'click', ->
+  #   player.api $(this).text().toLowerCase()
