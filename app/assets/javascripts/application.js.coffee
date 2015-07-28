@@ -102,7 +102,7 @@ track_video_events = ->
     woopra.track('video_started', { percentage: window.video_percentage }) if typeof woopra != 'undefined'
 
   onPlayProgress = (data) ->
-    window.video_percentage = parseFloat(data.percent) * 100
+    window.video_percentage = parseFloat(data.percent)
 
   if window.addEventListener
     window.addEventListener 'message', onMessageReceived, false
