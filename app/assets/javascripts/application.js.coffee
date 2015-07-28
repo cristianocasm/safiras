@@ -29,7 +29,6 @@
 #= require js/jflickrfeed
 #= require js/custom
 #= require jquery.mask
-#= require froogaloop
 #= require_tree .
 
 jQuery ->
@@ -52,32 +51,60 @@ jQuery ->
   $('#sem_preco').click ->
     $('#customer_price').val('00')
 
+  window.video_percentage = 0
   track_video_events()
 
 track_video_events = ->
-  iframe = $('#player1')[0]
-  player = $f(iframe)
-  # status = $('.status')
-  # When the player is ready, add listeners for pause, finish, and playProgress
+  player = $('iframe')
+  playerOrigin = '*'
 
-  onPause = (id) ->
-    console.log('paused')
-    # status.text 'paused'
+  # Listen for messages from the player
+  # Handle messages received from the player
+  onMessageReceived = (event) ->
+    # Handle messages from the vimeo player only
+    if !/^https?:\/\/player.vimeo.com/.test(event.origin)
+      return false
+    if playerOrigin == '*'
+      playerOrigin = event.origin
+    data = JSON.parse(event.data)
+    switch data.event
+      when 'ready'
+        onReady()
+      when 'play'
+        onPlay data.data
+      when 'playProgress'
+        onPlayProgress data.data
+      when 'pause'
+        onPause()
+      when 'finish'
+        onFinish()
 
-  onFinish = (id) ->
-    console.log('finished')
-    # status.text 'finished'
+  # Helper function for sending a message to the player
+  post = (action, value) ->
+    data = method: action
+    if value
+      data.value = value
+    message = JSON.stringify(data)
+    player[0].contentWindow.postMessage data, playerOrigin
 
-  onPlayProgress = (data, id) ->
-    console.log('played')
-    # status.text data.seconds + 's played'
+  onReady = ->
+    post 'addEventListener', 'pause'
+    post 'addEventListener', 'finish'
+    post 'addEventListener', 'playProgress'
 
-  player.addEvent 'ready', ->
-    # status.text 'ready'
-    player.addEvent 'pause', onPause
-    player.addEvent 'finish', onFinish
-    player.addEvent 'playProgress', onPlayProgress
+  onPause = ->
+    woopra.track('video_paused', { percentage: window.video_percentage }) if typeof woopra != 'undefined'
 
-  # Call the API when a button is pressed
-  # $('button').bind 'click', ->
-  #   player.api $(this).text().toLowerCase()
+  onFinish = ->
+    woopra.track('video_full_watched', { percentage: window.video_percentage }) if typeof woopra != 'undefined'
+
+  onPlay = (data) ->
+    woopra.track('video_started', { percentage: window.video_percentage }) if typeof woopra != 'undefined'
+
+  onPlayProgress = (data) ->
+    window.video_percentage = parseFloat(data.percent)
+
+  if window.addEventListener
+    window.addEventListener 'message', onMessageReceived, false
+  else
+    window.attachEvent 'onmessage', onMessageReceived, false
