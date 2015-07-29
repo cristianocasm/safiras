@@ -18,7 +18,7 @@ class CustomersController < ApplicationController
   def obrigado
   end
 
-  def google
+  def google8346493cd4fccd96
   end
 
   private

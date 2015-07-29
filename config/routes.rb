@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'customers#new'
   post 'customers' => 'customers#create'
   get 'obrigado' => 'customers#obrigado'
-  get 'google8346493cd4fccd96.html' => 'customers#google'
+  get 'google8346493cd4fccd96.html' => 'customers#google8346493cd4fccd96'
 
   mount Split::Dashboard, at: 'testes_ab'
 
