@@ -18,6 +18,9 @@ class CustomersController < ApplicationController
   def obrigado
   end
 
+  def google
+  end
+
   private
 
     # Never trust parameters from the scary internet, only allow the white list through.
