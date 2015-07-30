@@ -19,6 +19,7 @@ class CustomersController < ApplicationController
   end
 
   def google8346493cd4fccd96
+    render :layout => false
   end
 
   private
