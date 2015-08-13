@@ -12,13 +12,11 @@
   <link rel="alternate" href="safirasaloes.com.br" hreflang="pt-br" />
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= render "fb_pixel" if Rails.env.production? %>
   <%= render "woopra.html" if Rails.env.production? %>
+  <%= render "crazyegg"  if Rails.env.production? %>
   <%= favicon_link_tag 'favicon.png', rel: "shortcut icon" %>
-
-  <%= render "analytics" %>
-  <%= render "crazyegg" %>
   
+  <%= render "fb_pixel" if Rails.env.production? %>
 </head>
 <body class="home" data-spy="scroll" data-offset="250" data-target="#myScrollSpy">
 
