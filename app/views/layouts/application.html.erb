@@ -10,10 +10,10 @@
   <meta name="author" content="SafiraSalões - Conquista e Fideliza clientes para profissionais da beleza automaticamente">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="alternate" href="safirasaloes.com.br" hreflang="pt-br" />
+  <%= render "hotjar.html" if Rails.env.production? %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= render "woopra.html" if Rails.env.production? %>
-  <%= render "crazyegg"  if Rails.env.production? %>
   <%= favicon_link_tag 'favicon.png', rel: "shortcut icon" %>
   
   <%= render "fb_pixel" if Rails.env.production? %>
