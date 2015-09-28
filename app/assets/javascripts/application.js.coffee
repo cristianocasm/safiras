@@ -32,6 +32,8 @@
 #= require_tree .
 
 jQuery ->
+  window.videoPlayed = false
+
   $('.telefone').mask('(00) 0000-00009')
 
   $('.main-header li a.anchor').click ->
@@ -99,6 +101,13 @@ track_video_events = ->
     woopra.track('video_full_watched', { percentage: window.video_percentage }) if typeof woopra != 'undefined'
 
   onPlay = (data) ->
+    if window.videoPlayed == false
+      $.ajax(
+        url: 'video_position'
+      ).done(->
+        window.videoPlayed = true
+      )
+
     woopra.track('video_started', { percentage: window.video_percentage }) if typeof woopra != 'undefined'
 
   onPlayProgress = (data) ->

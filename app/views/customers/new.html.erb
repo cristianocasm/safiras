@@ -28,76 +28,151 @@
 <div id="main">
   <div class="fullwidthbanner-container" id="OQueE">
     <div class="fullwidthbanner rslider">
-      <ul>
-        <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on">
-          <%= image_tag "bkg-green.jpg", alt: "Pixma", 'data-lazyload' => image_path("bkg-green.jpg"), 'data-bgposition' => "center top", 'data-bgfit' => "cover", 'data-bgrepeat' => "no-repeat" %>
-          <div class="caption sft"
-          data-x="615"
-          data-y="40"
-          data-speed="600"
-          data-start="800"  >
-            <iframe src="//player.vimeo.com/video/118278702?byline=1&portrait=1&autoplay=0&api=1&player_id=player1" width="555" height="322" frameborder="0" id="player1" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-          </iframe>
-          </div>
-          <div class="caption large_text lfl"
-          data-x="0"
-          data-y="40"
-          data-speed="1000"
-          data-start="1500"
-          data-easing="easeOutExpo" > PROFISSIONAL DA BELEZA, </div>
-          <div class="caption large_bigblue sfl big_dbblue"
-          data-x="0"
-          data-y="90"
-          data-speed="1000"
-          data-start="1500"
-          data-easing="easeOutExpo" ><span class="dblue"> MAIS RENDIMENTOS </span></div>
-          <div class="caption large_text sfr"
-          data-x="0"
-          data-y="145"
-          data-speed="1000"
-          data-start="1500"
-          data-easing="easeOutExpo" > É O QUE VOCÊ DESEJA? </div>
-          <div class="caption list_slide sfb"
-          data-x="70"
-          data-y="210"
-          data-speed="1050"
-          data-start="2200"
-          data-easing="easeOutExpo"  > <h5 class="dblue"> Então veja o que trouxemos para você: </h5> </div>
-          <div class="caption list_slide lfb"
-          data-easing="easeOutExpo"
-          data-start="2200"
-          data-speed="1200"
-          data-y="260"
-          data-x="0">
-            <div class="list-slide">
-              <i class="fa fa-comments-o slide-icon"></i>
-              <h5 class="dblue"> Divulgação Boca-a-Boca nas Redes Sociais </h5>
-            </div>
-          </div>
-          <div class="caption list_slide lfb"
-          data-easing="easeOutExpo"
-          data-start="2200"
-          data-speed="1350"
-          data-y="300"
-          data-x="0">
-            <div class="list-slide">
-              <i class="fa fa-group slide-icon"></i>
-              <h5 class="dblue"> Fidelização Automática de Clientes </h5>
-            </div>
-          </div>
-          <div class="caption list_slide lfb"
-          data-easing="easeOutExpo"
-          data-start="2200"
-          data-speed="1500"
-          data-y="340"
-          data-x="0">
-            <div class="list-slide">
-              <i class="fa fa-envelope slide-icon"></i>
-              <h5 class="dblue"> SMS de Confirmação e Lembrete de Horário</h5>
-            </div>
-          </div>
-        </li>
-      </ul>
+      <% ab_test "video_position", "left", "right" do |video_position| %>
+        <% if video_position == 'right' %>
+          <ul>
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on">
+              <%= image_tag "bkg-green.jpg", alt: "Pixma", 'data-lazyload' => image_path("bkg-green.jpg"), 'data-bgposition' => "center top", 'data-bgfit' => "cover", 'data-bgrepeat' => "no-repeat" %>
+              <div class="caption sft"
+              data-x="615"
+              data-y="40"
+              data-speed="600"
+              data-start="800"  >
+                <iframe src="//player.vimeo.com/video/118278702?byline=1&portrait=1&autoplay=0&api=1&player_id=player1" width="555" height="322" frameborder="0" id="player1" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+              </iframe>
+              </div>
+              <div class="caption large_text lfl"
+              data-x="0"
+              data-y="40"
+              data-speed="1000"
+              data-start="1500"
+              data-easing="easeOutExpo" > PROFISSIONAL DA BELEZA, </div>
+              <div class="caption large_bigblue sfl big_dbblue"
+              data-x="0"
+              data-y="90"
+              data-speed="1000"
+              data-start="1500"
+              data-easing="easeOutExpo" ><span class="dblue"> MAIS RENDIMENTOS </span></div>
+              <div class="caption large_text sfr"
+              data-x="0"
+              data-y="145"
+              data-speed="1000"
+              data-start="1500"
+              data-easing="easeOutExpo" > É O QUE VOCÊ DESEJA? </div>
+              <div class="caption list_slide sfb"
+              data-x="70"
+              data-y="210"
+              data-speed="1050"
+              data-start="2200"
+              data-easing="easeOutExpo"  > <h5 class="dblue"> Então veja o que trouxemos para você: </h5> </div>
+              <div class="caption list_slide lfb"
+              data-easing="easeOutExpo"
+              data-start="2200"
+              data-speed="1200"
+              data-y="260"
+              data-x="0">
+                <div class="list-slide">
+                  <i class="fa fa-comments-o slide-icon"></i>
+                  <h5 class="dblue"> Divulgação Boca-a-Boca nas Redes Sociais </h5>
+                </div>
+              </div>
+              <div class="caption list_slide lfb"
+              data-easing="easeOutExpo"
+              data-start="2200"
+              data-speed="1350"
+              data-y="300"
+              data-x="0">
+                <div class="list-slide">
+                  <i class="fa fa-group slide-icon"></i>
+                  <h5 class="dblue"> Fidelização Automática de Clientes </h5>
+                </div>
+              </div>
+              <div class="caption list_slide lfb"
+              data-easing="easeOutExpo"
+              data-start="2200"
+              data-speed="1500"
+              data-y="340"
+              data-x="0">
+                <div class="list-slide">
+                  <i class="fa fa-envelope slide-icon"></i>
+                  <h5 class="dblue"> SMS de Confirmação e Lembrete de Horário</h5>
+                </div>
+              </div>
+            </li>
+          </ul>
+        <% else %>
+          <ul>
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on">
+              <%= image_tag "bkg-green.jpg", alt: "Pixma", 'data-lazyload' => image_path("bkg-green.jpg"), 'data-bgposition' => "center top", 'data-bgfit' => "cover", 'data-bgrepeat' => "no-repeat" %>
+              <div class="caption sft"
+              data-x="0"
+              data-y="40"
+              data-speed="600"
+              data-start="800"  >
+                <iframe src="//player.vimeo.com/video/118278702?byline=1&portrait=1&autoplay=0&api=1&player_id=player1" width="555" height="322" frameborder="0" id="player1" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+              </iframe>
+              </div>
+              <div class="caption large_text lfl"
+              data-x="615"
+              data-y="40"
+              data-speed="1000"
+              data-start="1500"
+              data-easing="easeOutExpo" > PROFISSIONAL DA BELEZA, </div>
+              <div class="caption large_bigblue sfl big_dbblue"
+              data-x="615"
+              data-y="90"
+              data-speed="1000"
+              data-start="1500"
+              data-easing="easeOutExpo" ><span class="dblue"> MAIS RENDIMENTOS </span></div>
+              <div class="caption large_text sfr"
+              data-x="615"
+              data-y="145"
+              data-speed="1000"
+              data-start="1500"
+              data-easing="easeOutExpo" > É O QUE VOCÊ DESEJA? </div>
+              <div class="caption list_slide sfb"
+              data-x="685"
+              data-y="210"
+              data-speed="1050"
+              data-start="2200"
+              data-easing="easeOutExpo"  > <h5 class="dblue"> Então veja o que trouxemos para você: </h5> </div>
+              <div class="caption list_slide lfb"
+              data-easing="easeOutExpo"
+              data-start="2200"
+              data-speed="1200"
+              data-y="260"
+              data-x="615">
+                <div class="list-slide">
+                  <i class="fa fa-comments-o slide-icon"></i>
+                  <h5 class="dblue"> Divulgação Boca-a-Boca nas Redes Sociais </h5>
+                </div>
+              </div>
+              <div class="caption list_slide lfb"
+              data-easing="easeOutExpo"
+              data-start="2200"
+              data-speed="1350"
+              data-y="300"
+              data-x="615">
+                <div class="list-slide">
+                  <i class="fa fa-group slide-icon"></i>
+                  <h5 class="dblue"> Fidelização Automática de Clientes </h5>
+                </div>
+              </div>
+              <div class="caption list_slide lfb"
+              data-easing="easeOutExpo"
+              data-start="2200"
+              data-speed="1500"
+              data-y="340"
+              data-x="615">
+                <div class="list-slide">
+                  <i class="fa fa-envelope slide-icon"></i>
+                  <h5 class="dblue"> SMS de Confirmação e Lembrete de Horário</h5>
+                </div>
+              </div>
+            </li>
+          </ul>
+        <% end %>
+      <% end %>
     </div>
   </div>
 
@@ -1847,7 +1922,6 @@
 
 
 <div class="features bottom-pad" id="CadastreSe">
-  <%# ab_test "prices", "low", "medium", "high" do |price| %>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">

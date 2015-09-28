@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post 'customers' => 'customers#create'
   get 'obrigado' => 'customers#obrigado'
   get 'google8346493cd4fccd96.html' => 'customers#google8346493cd4fccd96'
+  get 'video_position' => "customers#track_video_played"
 
   mount Split::Dashboard, at: 'testes_ab'
 
