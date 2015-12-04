@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'obrigado' => 'customers#obrigado'
   get 'google8346493cd4fccd96.html' => 'customers#google8346493cd4fccd96'
   get 'video_position' => "customers#track_video_played"
+  get ':professional_website', to: redirect('http://www.meu.safirasaloes.com.br/%{professional_website}')
 
   mount Split::Dashboard, at: 'testes_ab'
 
