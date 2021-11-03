@@ -66,7 +66,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
-    mini_portile (0.6.0)
+    mini_portile2 (2.6.1)
     minitest (5.5.0)
     minitest-reporters (1.0.8)
       ansi
@@ -76,9 +76,11 @@ GEM
     multi_json (1.10.1)
     mysql2 (0.3.17)
     newrelic_rpm (3.9.0.229)
-    nokogiri (1.6.3.1)
-      mini_portile (= 0.6.0)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
     polyglot (0.3.5)
+    racc (1.6.0)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
